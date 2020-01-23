@@ -1,0 +1,12 @@
+# Following links
+# Input
+response.css('li.next a').get()
+
+
+# Scrapy CSS extension
+# Input
+response.css('li.next a::attr(href)').get()
+
+# Atrib property
+# Input
+response.css('li.next a').attrib['href']
