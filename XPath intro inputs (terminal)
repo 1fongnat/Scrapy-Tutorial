@@ -1,0 +1,5 @@
+# Input
+response.xpath('//title')
+
+# Input
+response.xpath('//title/text()').get()
