@@ -1,0 +1,3 @@
+# Using spider arguments
+# Input
+scrapy crawl quotes -o quotes-humor.json -a tag=humor
