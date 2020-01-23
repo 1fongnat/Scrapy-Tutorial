@@ -1,0 +1,9 @@
+# Storing the scraped data
+#Using Feed exports
+# Input in terminal
+scrapy crawl quotes -o quotes.json
+
+
+# Using JSON Lines
+# Input in terminal
+scrapy crawl quotes -o quotes.jl
