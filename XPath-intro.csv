@@ -1,8 +1,10 @@
 "#XPath: a brief intro" 
-"# Input response.xpath('//title')" 
+"# Input"
+"response.xpath('//title')" 
 "# Output
 "[]"
-"# Input response.xpath('//title/text()').get() 
+"# Input"
+"response.xpath('//title/text()').get()"
 "# Output"
 "'Quotes to Scrape'"
 ""
