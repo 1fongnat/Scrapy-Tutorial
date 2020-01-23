@@ -1,0 +1,24 @@
+#Using scrapy shell to extract data from http://quotes.toscrape.com
+# Input
+response.css("div.quote")
+
+# Input
+quote = response.css("div.quote")[0]
+text = quote.css("span.text::text").get()
+text
+
+# Input
+author = quote.css("small.author::text").get()
+author
+
+# Input
+tags = quote.css("div.tags a.tag::text").getall()
+tags
+
+#Python dictionary
+# Input
+for quote in response.css("div.quote"):
+  text = quote.css("span.text::text").get()
+  author = quote.css("small.author::text").get()
+  tags = quote.css("div.tags a.tag::text").getall()
+  print(dict(text=text, author=author, tags=tags))
